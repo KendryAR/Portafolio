@@ -1,10 +1,10 @@
-package backend.back;
+package portaf.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BackApplicationTests {
+class BackEndApplicationTests {
 
 	@Test
 	void contextLoads() {

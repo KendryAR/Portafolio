@@ -1,13 +1,13 @@
-package backend.back;
+package portaf.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BackApplication {
+public class BackEndApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BackApplication.class, args);
+		SpringApplication.run(BackEndApplication.class, args);
 	}
 
 }

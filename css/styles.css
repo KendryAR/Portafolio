@@ -1,0 +1,139 @@
+/* Estilos globales para la página */
+html, body {
+    height: 100%; /* Aseguramos que todo el documento ocupe el 100% de la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    background-color: black; /* Fondo negro */
+    color: rgb(61, 64, 253); /* Color de texto visible sobre el fondo negro */
+    font-family: 'Arial', sans-serif; /* Fuente predeterminada */
+    overflow-x: hidden; /* Evita que la página haga scroll horizontal */
+}
+
+/* Barra de navegación */
+header nav ul {
+    list-style-type: none;  /* Elimina los puntos de lista */
+    padding: 0;  /* Elimina el relleno por defecto */
+    margin: 0;  /* Elimina los márgenes por defecto */
+    display: flex;  /* Usamos flexbox para alinear los elementos en fila */
+    justify-content: center;  /* Centra los elementos horizontalmente */
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    top: 0; /* Se mantiene en la parte superior */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    z-index: 100; /* Asegura que esté por encima de otros elementos */
+}
+
+/* Estilo de los elementos de la barra de navegación */
+header nav ul li {
+    margin: 0 30px;  /* Espacio entre los elementos */
+}
+
+header nav ul li a {
+    color: white;  /* Color del texto */
+    text-decoration: none;  /* Elimina el subrayado */
+    font-weight: bold;  /* Hace que el texto sea en negrita */
+    padding: 15px 20px;  /* Agrega espacio alrededor de los enlaces */
+    border-radius: 10px;  /* Redondea los bordes de los enlaces */
+    transition: background-color 0.3s, transform 0.3s;  /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre los enlaces de la barra */
+header nav ul li a:hover {
+    background-color: #007bff;  /* Cambia el color de fondo cuando se pasa el mouse */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
+}
+
+/* Estilo de la sección Hero */
+.hero {
+    display: flex;  /* Usamos flexbox para colocar la imagen y el contenido en fila */
+    align-items: center;  /* Alineamos los elementos verticalmente al centro */
+    gap: 30px;  /* Espacio entre la imagen y el contenido */
+    padding: 80px 50px;  /* Relleno interno de la sección */
+    min-height: 100vh;  /* Asegura que ocupe toda la altura de la pantalla */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con algo de transparencia */
+    border-bottom: 2px solid #fff;  /* Borde inferior blanco */
+}
+
+/* Estilo para la imagen dentro de la sección Hero */
+.hero-img {
+    width: 200px;  /* Ajusta el tamaño de la imagen */
+    height: 300px; /* Ajusta el tamaño de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área */
+    border: 5px solid #fff; /* Borde blanco alrededor de la imagen */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 25px rgba(0, 123, 255, 0.8); /* Brillo alrededor */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transición */
+}
+
+/* Efecto de la imagen al pasar el ratón */
+.hero-img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1), 0 0 35px rgba(0, 123, 255, 1); /* Aumenta el brillo */
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg); /* Efecto 3D */
+}
+
+/* Estilo para el título y párrafo de la sección Hero */
+.hero h1, .hero p {
+    color: white;  /* Color del texto */
+    font-size: 2.5rem;  /* Tamaño de fuente grande */
+    text-align: left;  /* Alineamos el texto a la izquierda */
+}
+
+/* Botón de enlace dentro de la sección Hero */
+.hero .btn {
+    padding: 15px 30px;  /* Espaciado dentro del botón */
+    background-color: #007bff;  /* Color de fondo */
+    color: white;  /* Color del texto */
+    border-radius: 5px;  /* Bordes redondeados */
+    text-decoration: none;  /* Elimina el subrayado */
+    font-weight: bold;  /* Negrita en el texto */
+    margin-top: 20px;  /* Espacio superior */
+    display: inline-block;  /* Asegura que se muestre como bloque en línea */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+/* Efecto al pasar el ratón sobre el botón */
+.hero .btn:hover {
+    background-color: #0056b3;  /* Color de fondo al pasar el ratón */
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+/* Estilo para los elementos de habilidades */
+.skills {
+    background-color: #111;  /* Fondo oscuro */
+    color: white;  /* Color del texto */
+    padding: 50px 30px;  /* Relleno interno */
+    text-align: center;  /* Centra el texto */
+}
+
+/* Lista de habilidades */
+.skills ul {
+    list-style-type: none;  /* Elimina los puntos de lista */
+    padding: 0;  /* Elimina el relleno por defecto */
+}
+
+.skills li {
+    margin: 10px 0;  /* Espacio entre los elementos de la lista */
+    font-size: 1.2rem;  /* Tamaño de fuente */
+    font-weight: bold;  /* Negrita */
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #111;  /* Fondo oscuro */
+    color: white;  /* Color del texto */
+    text-align: center;  /* Centra el texto */
+    padding: 20px;  /* Relleno interno */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Efecto de transición en los enlaces */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #007bff;  /* Color de enlace al pasar el ratón */
+}
