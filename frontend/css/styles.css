@@ -42,6 +42,15 @@ header nav ul li a:hover {
     background-color: #007bff;  /* Cambia el color de fondo cuando se pasa el mouse */
     transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
 }
+/* Imagen del logo */
+.nav-logo {
+    width: 100px; /* Ajusta el ancho a un tamaño considerable */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    margin-right: 20px; /* Espaciado entre la imagen y los enlaces */
+    border-radius: 10px; /* Opcional: bordes ligeramente redondeados */
+    object-fit: contain; /* Asegura que la imagen se vea completa dentro de sus dimensiones */
+}
+
 
 /* Estilo de la sección Hero */
 .hero {
