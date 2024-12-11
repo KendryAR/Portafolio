@@ -1,3 +1,7 @@
+
+
+
+/*------------------------------------------------------------------------------------------------*/
 /* Estilos globales para la página */
 html, body {
     height: 100%; /* Aseguramos que todo el documento ocupe el 100% de la altura */
@@ -16,30 +20,32 @@ header nav ul {
     margin: 0;  /* Elimina los márgenes por defecto */
     display: flex;  /* Usamos flexbox para alinear los elementos en fila */
     justify-content: center;  /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
     position: fixed; /* Fija la barra de navegación en la parte superior */
     width: 100%; /* Asegura que ocupe todo el ancho */
     top: 0; /* Se mantiene en la parte superior */
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    top: 20px; /* Se mantiene unos 20px abajo desde la parte superior */
+    background-color: rgba(133, 126, 126, 0.7); /* Fondo semi-transparente */
     z-index: 100; /* Asegura que esté por encima de otros elementos */
 }
 
 /* Estilo de los elementos de la barra de navegación */
 header nav ul li {
-    margin: 0 30px;  /* Espacio entre los elementos */
+    margin: 0 50px;  /* Espacio entre los elementos */
 }
 
 header nav ul li a {
     color: white;  /* Color del texto */
     text-decoration: none;  /* Elimina el subrayado */
     font-weight: bold;  /* Hace que el texto sea en negrita */
-    padding: 15px 20px;  /* Agrega espacio alrededor de los enlaces */
+    padding: 10px 25px;  /* Agrega espacio alrededor de los enlaces */
     border-radius: 10px;  /* Redondea los bordes de los enlaces */
     transition: background-color 0.3s, transform 0.3s;  /* Transición suave */
 }
 
 /* Efecto al pasar el ratón sobre los enlaces de la barra */
 header nav ul li a:hover {
-    background-color: #007bff;  /* Cambia el color de fondo cuando se pasa el mouse */
+    background-color: #e6ecf3;  /* Cambia el color de fondo cuando se pasa el mouse */
     transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace */
 }
 /* Imagen del logo */
@@ -50,6 +56,50 @@ header nav ul li a:hover {
     border-radius: 10px; /* Opcional: bordes ligeramente redondeados */
     object-fit: contain; /* Asegura que la imagen se vea completa dentro de sus dimensiones */
 }
+/*------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------*/
+
+
+/* Estilos para la imagen de perfil */
+.header-img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Ajusta el tamaño de la imagen */
+    border-radius: 50%; /* Da forma redondeada */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Añade una sombra suave */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+}
+
+/* Estilos para el texto del desarrollador */
+.header-text {
+    text-align: center; /* Centra el texto */
+    color: #FFFFFF; /* Color de texto blanco para mayor contraste */
+    font-size: 1.2em; /* Tamaño de fuente más grande */
+    line-height: 1.5; /* Ajusta el espacio entre líneas */
+    margin-top: 10px; /* Espacio encima del texto */
+    font-weight: bold; /* Resalta el texto */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Estilo de la sección Hero */
@@ -146,4 +196,5 @@ a {
 a:hover {
     color: #007bff;  /* Color de enlace al pasar el ratón */
 }
+
 
